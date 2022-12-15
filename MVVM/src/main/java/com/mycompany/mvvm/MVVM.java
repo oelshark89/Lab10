@@ -14,6 +14,10 @@ public class MVVM {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         System.out.println("omarr");
+<<<<<<< HEAD
         System.out.println("zuzo");
+=======
+        System.out.println("a7a");
+>>>>>>> domz
     }
 }
