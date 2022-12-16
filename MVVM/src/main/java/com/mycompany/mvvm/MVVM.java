@@ -5,6 +5,11 @@
 
 package com.mycompany.mvvm;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+
 /**
  *
  * @author omare
@@ -12,12 +17,16 @@ package com.mycompany.mvvm;
 public class MVVM {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("omarr");
-<<<<<<< HEAD
-        System.out.println("zuzo");
-=======
-        System.out.println("a7a");
->>>>>>> domz
-    }
+        try (
+            
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "myuser", "xxxx");
+            Statement stmt=conn.createStatement();){
+                
+            System.out.println("Connected sucessfully ");}
+            
+            
+        catch(SQLException ex){
+           ex.printStackTrace();
+}
+}
 }
