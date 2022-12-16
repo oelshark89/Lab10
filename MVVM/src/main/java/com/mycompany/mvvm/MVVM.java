@@ -12,13 +12,12 @@ package com.mycompany.mvvm;
 public class MVVM {
 
     public static void main(String[] args) {
-<<<<<<< Updated upstream
+
         System.out.println("Hello World!");
         System.out.println("omarr");
-        System.out.println("a7a");
-=======
-       
 
->>>>>>> Stashed changes
+        System.out.println("zuzo");
+        System.out.println("a7a");
+
     }
 }
