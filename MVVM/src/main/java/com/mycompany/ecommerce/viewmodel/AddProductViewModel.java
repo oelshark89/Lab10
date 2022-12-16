@@ -9,5 +9,8 @@ import java.sql.*;
  * @author ram
  */
 public class AddProductViewModel {
+       
+    
+    
     
 }

@@ -88,7 +88,7 @@ private Boolean state;
     public void setVisualState(boolean b) {
      this.state=b;
      this.setVisible(b);
-     notifyAllObservers();;
+     notifyAllObservers();
     }
 
     @Override
