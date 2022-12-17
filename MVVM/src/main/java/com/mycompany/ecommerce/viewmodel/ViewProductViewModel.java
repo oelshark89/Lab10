@@ -6,9 +6,13 @@ package com.mycompany.ecommerce.viewmodel;
 import com.mycompany.ecommerce.model.ProductItem;
 import com.mycompany.ecommerce.view.ViewProductsScreen;
 import java.sql.*;
+<<<<<<< HEAD
 import static java.time.ZoneOffset.UTC;
 import java.util.ArrayList;
 import static java.util.Date.UTC;
+=======
+import java.util.ArrayList;
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTable;
@@ -19,6 +23,7 @@ import javax.swing.table.DefaultTableModel;
  * @author ram
  */
 public class ViewProductViewModel {
+<<<<<<< HEAD
 private ArrayList <ProductItem> products= new ArrayList<>();
 private ViewProductsScreen viewProductsScreen;
 
@@ -42,10 +47,20 @@ private ViewProductsScreen viewProductsScreen;
       this.viewProductsScreen=viewProductsScreen;
     }
  
+=======
+    private ProductItem product;
+    private ArrayList<ProductItem> products=new ArrayList<>();
+    private ViewProductsScreen VPS;
+
+    public ViewProductViewModel(ViewProductsScreen VPS) {
+        this.VPS = VPS;
+    }
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
     
     public void viewTableDB()  {
         
             try (
+<<<<<<< HEAD
               
                    
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop", "myuser", "xxxx");
@@ -67,11 +82,27 @@ private ViewProductsScreen viewProductsScreen;
                 }
                  
             }        catch(SQLException ex){
+=======
+            
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:/bookshop", "myuser", "0000");
+            Statement stmt=conn.createStatement();){
+                String strSelect = "select * from products";
+            ResultSet rset = stmt.executeQuery(strSelect);
+            while (rset.next()) {
+                int id = rset.getInt("id");
+                String name = rset.getString("name");
+                double price = rset.getDouble("price");
+                product = new ProductItem(id, name, price);
+                 products.add(product);
+            }
+            VPS.setdata();
+           }
+            
+            
+        catch(SQLException ex){
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
            ex.printStackTrace();
-                    
-                    
-        
-    }
+                     }
     }
         public void toTable(){
       String [][] data=new String[products.size()][3];
@@ -88,10 +119,14 @@ private ViewProductsScreen viewProductsScreen;
                   
                 }
     
-    public static void main(String[] args)
-    {
-        
-    
-    }     
+   public String[][] toArray() {
+        String[][] x = new String[products.size()][3];
+        for (int i = 0; i < products.size(); i++) {
+            x[i][0] = products.get(i).getName();
+            x[i][1] = Integer.toString(products.get(i).getId());
+            x[i][2] = Double.toString(products.get(i).getPrice());
+        }
+        return x;
+    }  
             
 }

@@ -15,6 +15,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class ViewProductsScreen extends javax.swing.JFrame implements Observer{
 private AddProductScreen addProductScreen;
+<<<<<<< HEAD
 private  String [] columnsNames;  
 
 private ViewProductViewModel viewProductViewModel;
@@ -41,6 +42,22 @@ public ViewProductsScreen(String[] columnsNames) {
          this.viewProductViewModel=viewProductViewModel;
         viewProductViewModel.viewTableDB();
         viewProductViewModel.toTable();
+=======
+private ViewProductViewModel viewProductViewModel;
+private String[] columnNames={"id","name","price"};
+    /**
+     * Creates new form ViewProductsScreen
+     */
+public void setdata(){
+   jTable1.setModel(new DefaultTableModel (viewProductViewModel.toArray(),columnNames));
+
+
+}
+    public ViewProductsScreen() {
+        initComponents();
+         viewProductViewModel =new ViewProductViewModel(this);
+        viewProductViewModel.viewTableDB();
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
         
     }
 
@@ -53,7 +70,11 @@ public ViewProductsScreen(String[] columnsNames) {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< HEAD
         jButton1 = new javax.swing.JButton();
+=======
+        AddButton = new javax.swing.JButton();
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
@@ -61,22 +82,29 @@ public ViewProductsScreen(String[] columnsNames) {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("View products");
 
+<<<<<<< HEAD
         jButton1.setText("Add to cart");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+=======
+        AddButton.setText("Add");
+        AddButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddButtonActionPerformed(evt);
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
             }
         });
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "name", "Price"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -88,6 +116,7 @@ public ViewProductsScreen(String[] columnsNames) {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(59, 59, 59)
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -106,11 +135,30 @@ public ViewProductsScreen(String[] columnsNames) {
                     .addComponent(jButton1)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(10, 10, 10))
+=======
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(134, 134, 134)
+                        .addComponent(AddButton)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(AddButton)
+                .addContainerGap(31, Short.MAX_VALUE))
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         if(addProductScreen==null){
@@ -120,6 +168,16 @@ public ViewProductsScreen(String[] columnsNames) {
         addProductScreen.setVisualState(true);
         
     }//GEN-LAST:event_jButton1ActionPerformed
+=======
+    private void AddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddButtonActionPerformed
+        if(addProductScreen==null)
+        {
+           addProductScreen=new AddProductScreen();
+        } 
+        addProductScreen.attach(this);
+        addProductScreen.setVisualState(true);
+    }//GEN-LAST:event_AddButtonActionPerformed
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
 
     /**
      * @param args the command line arguments
@@ -163,8 +221,12 @@ public ViewProductsScreen(String[] columnsNames) {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+=======
+    private javax.swing.JButton AddButton;
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
