@@ -32,18 +32,15 @@ private Boolean state;
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Add Product");
 
-<<<<<<< HEAD
         jLabel1.setText("Id");
 
-<<<<<<< HEAD
         jLabel2.setText("name");
 
         jLabel3.setText("price");
-=======
         jLabel2.setText("Name");
 
         jLabel3.setText("Price");
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,7 +48,6 @@ private Boolean state;
             }
         });
 
-<<<<<<< HEAD
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -64,8 +60,7 @@ private Boolean state;
             }
         });
 
-=======
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+
         jButton1.setText("Add");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,15 +68,12 @@ private Boolean state;
             }
         });
 
-=======
->>>>>>> parent of 611701a (half done)
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-<<<<<<< HEAD
             .addGroup(layout.createSequentialGroup()
-<<<<<<< HEAD
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(34, 34, 34)
@@ -98,7 +90,6 @@ private Boolean state;
                         .addGap(42, 42, 42)
                         .addComponent(jButton1)))
                 .addContainerGap(226, Short.MAX_VALUE))
-=======
                 .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -118,12 +109,11 @@ private Boolean state;
                 .addGap(142, 142, 142)
                 .addComponent(jButton1)
                 .addContainerGap(191, Short.MAX_VALUE))
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-<<<<<<< HEAD
                 .addGap(40, 40, 40)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
@@ -139,7 +129,7 @@ private Boolean state;
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(36, 36, 36))
-=======
+
                 .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
@@ -155,21 +145,17 @@ private Boolean state;
                 .addGap(18, 18, 18)
                 .addComponent(jButton1)
                 .addContainerGap(30, Short.MAX_VALUE))
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
-=======
-            .addGap(0, 405, Short.MAX_VALUE)
+ .addGap(0, 405, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
->>>>>>> parent of 611701a (half done)
+
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
@@ -199,7 +185,6 @@ private Boolean state;
             JOptionPane.showMessageDialog(null,"Invalid input");
             
         }
-=======
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
@@ -207,11 +192,10 @@ private Boolean state;
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.setVisualState(false);
         this.notifyAllObservers();
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
-=======
->>>>>>> parent of 611701a (half done)
+
     /**
      * @param args the command line arguments
      */
