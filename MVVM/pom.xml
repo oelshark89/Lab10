@@ -5,6 +5,18 @@
     <artifactId>MVVM</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+<<<<<<< HEAD
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+=======
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+>>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+            <version>8.0.31</version>
+        </dependency>
+    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>

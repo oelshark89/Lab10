@@ -17,6 +17,7 @@ import java.sql.Statement;
 public class MVVM {
 
     public static void main(String[] args) {
+<<<<<<< HEAD
         try (
             
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "myuser", "xxxx");
@@ -27,6 +28,16 @@ public class MVVM {
             
         catch(SQLException ex){
            ex.printStackTrace();
+=======
+
+        System.out.println("Hello World!");
+        System.out.println("omarr");
+
+        System.out.println("zuzo");
+        System.out.println("a7a");
+
+    }
+>>>>>>> domz
 }
 }
 }
