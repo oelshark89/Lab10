@@ -6,26 +6,18 @@ package com.mycompany.ecommerce.view;
 
 import com.mycompany.ecommerce.ObserverPattern.Subject;
 import com.mycompany.ecommerce.viewmodel.AddProductViewModel;
-import com.mycompany.ecommerce.viewmodel.ViewProductViewModel;
 import java.util.ArrayList;
-import javax.swing.JOptionPane;
 
 /**
  *
  * @author ram
  */
 public class AddProductScreen extends javax.swing.JFrame implements Subject {
-private AddProductViewModel addProductViewModel;
+private AddProductViewModel addProductViewModel= new AddProductViewModel();
 private ArrayList<ViewProductsScreen> observers= new ArrayList();
-private ViewProductViewModel viewProductViewModel;
 private Boolean state;
-    public AddProductScreen(ViewProductViewModel viewProductViewModel) {
+    public AddProductScreen() {
         initComponents();
-        this.viewProductViewModel=viewProductViewModel;
-    }
-
-    private AddProductScreen() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
@@ -37,17 +29,10 @@ private Boolean state;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Add Product");
 
+<<<<<<< HEAD
         jLabel1.setText("Id");
 
 <<<<<<< HEAD
@@ -88,10 +73,13 @@ private Boolean state;
             }
         });
 
+=======
+>>>>>>> parent of 611701a (half done)
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(layout.createSequentialGroup()
 <<<<<<< HEAD
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -168,11 +156,19 @@ private Boolean state;
                 .addComponent(jButton1)
                 .addContainerGap(30, Short.MAX_VALUE))
 >>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+=======
+            .addGap(0, 405, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+>>>>>>> parent of 611701a (half done)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
@@ -214,6 +210,8 @@ private Boolean state;
 >>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
     }//GEN-LAST:event_jButton1ActionPerformed
 
+=======
+>>>>>>> parent of 611701a (half done)
     /**
      * @param args the command line arguments
      */
@@ -250,13 +248,6 @@ private Boolean state;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 
     @Override

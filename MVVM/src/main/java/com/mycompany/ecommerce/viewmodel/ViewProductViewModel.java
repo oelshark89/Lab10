@@ -3,9 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.ecommerce.viewmodel;
-import com.mycompany.ecommerce.model.ProductItem;
-import com.mycompany.ecommerce.view.ViewProductsScreen;
 import java.sql.*;
+<<<<<<< HEAD
 <<<<<<< HEAD
 import static java.time.ZoneOffset.UTC;
 import java.util.ArrayList;
@@ -13,16 +12,17 @@ import static java.util.Date.UTC;
 =======
 import java.util.ArrayList;
 >>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+=======
+>>>>>>> parent of 611701a (half done)
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author ram
  */
 public class ViewProductViewModel {
+<<<<<<< HEAD
 <<<<<<< HEAD
 private ArrayList <ProductItem> products= new ArrayList<>();
 private ViewProductsScreen viewProductsScreen;
@@ -56,19 +56,24 @@ private ViewProductsScreen viewProductsScreen;
         this.VPS = VPS;
     }
 >>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+=======
+>>>>>>> parent of 611701a (half done)
     
-    public void viewTableDB()  {
+    public void viewTableDB() {
         
             try (
+<<<<<<< HEAD
 <<<<<<< HEAD
               
                    
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop", "myuser", "xxxx");
+=======
+            
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "myuser", "xxxx");
+>>>>>>> parent of 611701a (half done)
             Statement stmt=conn.createStatement();){
-                String sql = "select * from books";
-                ResultSet rs=stmt.executeQuery(sql);
-                viewProductsScreen.setColumnNames(new String[]{"id","name","price"}); 
                 
+<<<<<<< HEAD
                 while(rs.next()){
                     String id=String.valueOf(rs.getInt("id"));
                     String name=String.valueOf(rs.getString("name"));
@@ -101,23 +106,16 @@ private ViewProductsScreen viewProductsScreen;
             
         catch(SQLException ex){
 >>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+=======
+            System.out.println("Connected sucessfully ");}
+            
+            
+        catch(SQLException ex){
+>>>>>>> parent of 611701a (half done)
            ex.printStackTrace();
                      }
     }
-        public void toTable(){
-      String [][] data=new String[products.size()][3];
-                 for(int i=0;i<products.size();i++){
-                    
-                     int x=products.get(i).getId();
-                    
-                     data[i][0]=Integer.toString(x);
-                     data[i][1]=products.get(i).getName();
-                     data[i][2]=Double.toString(products.get(i).getPrice());
-                     
-                 }
-                  viewProductsScreen.setData(data);
-                  
-                }
+    
     
    public String[][] toArray() {
         String[][] x = new String[products.size()][3];

@@ -26,13 +26,20 @@
       <Group type="103" groupAlignment="0" attributes="0">
 <<<<<<< HEAD
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jScrollPane1" min="-2" pref="353" max="-2" attributes="0"/>
-                  <Component id="jLabel1" alignment="0" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="jScrollPane1" min="-2" pref="363" max="-2" attributes="0"/>
+                      <EmptySpace pref="326" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="AddButton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                  </Group>
               </Group>
+<<<<<<< HEAD
               <EmptySpace pref="139" max="32767" attributes="0"/>
 =======
           <Group type="102" attributes="0">
@@ -48,11 +55,14 @@
               </Group>
               <EmptySpace max="32767" attributes="0"/>
 >>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+=======
+>>>>>>> parent of 611701a (half done)
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< HEAD
 <<<<<<< HEAD
           <Group type="102" attributes="0">
               <EmptySpace pref="11" max="32767" attributes="0"/>
@@ -70,15 +80,36 @@
               <Component id="AddButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="31" max="32767" attributes="0"/>
 >>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+=======
+          <Group type="102" alignment="1" attributes="0">
+              <Component id="jScrollPane1" min="-2" pref="272" max="-2" attributes="0"/>
+              <EmptySpace pref="36" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AddButton" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+>>>>>>> parent of 611701a (half done)
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <Component class="javax.swing.JButton" name="AddButton">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddButtonActionPerformed"/>
+      </Events>
+    </Component>
+>>>>>>> parent of 611701a (half done)
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Add to cart"/>
+        <Property name="text" type="java.lang.String" value="View"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
@@ -134,12 +165,5 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="2" name="C:\Users\omare\OneDrive\Desktop\shop.png"/>
-        </Property>
-      </Properties>
-    </Component>
   </SubComponents>
 </Form>
