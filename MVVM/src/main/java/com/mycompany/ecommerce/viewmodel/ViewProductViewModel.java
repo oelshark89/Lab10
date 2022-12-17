@@ -4,16 +4,13 @@
  */
 package com.mycompany.ecommerce.viewmodel;
 import java.sql.*;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 import static java.time.ZoneOffset.UTC;
 import java.util.ArrayList;
 import static java.util.Date.UTC;
-=======
 import java.util.ArrayList;
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
-=======
->>>>>>> parent of 611701a (half done)
+
+
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,8 +19,7 @@ import java.util.logging.Logger;
  * @author ram
  */
 public class ViewProductViewModel {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 private ArrayList <ProductItem> products= new ArrayList<>();
 private ViewProductsScreen viewProductsScreen;
 
@@ -47,7 +43,6 @@ private ViewProductsScreen viewProductsScreen;
       this.viewProductsScreen=viewProductsScreen;
     }
  
-=======
     private ProductItem product;
     private ArrayList<ProductItem> products=new ArrayList<>();
     private ViewProductsScreen VPS;
@@ -55,19 +50,15 @@ private ViewProductsScreen viewProductsScreen;
     public ViewProductViewModel(ViewProductsScreen VPS) {
         this.VPS = VPS;
     }
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
-=======
->>>>>>> parent of 611701a (half done)
+
     
     public void viewTableDB() {
         
             try (
-<<<<<<< HEAD
-<<<<<<< HEAD
+
               
                    
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop", "myuser", "xxxx");
-=======
             
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "myuser", "xxxx");
 >>>>>>> parent of 611701a (half done)
