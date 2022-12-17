@@ -24,7 +24,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
+
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -39,9 +39,8 @@
                       <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
                   </Group>
               </Group>
-<<<<<<< HEAD
+
               <EmptySpace pref="139" max="32767" attributes="0"/>
-=======
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -54,16 +53,13 @@
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
-=======
->>>>>>> parent of 611701a (half done)
+
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
           <Group type="102" attributes="0">
               <EmptySpace pref="11" max="32767" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="213" max="-2" attributes="0"/>
@@ -73,14 +69,13 @@
                   <Component id="jLabel1" min="-2" pref="27" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-=======
+
           <Group type="102" alignment="1" attributes="0">
               <Component id="jScrollPane1" min="-2" pref="272" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Component id="AddButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="31" max="32767" attributes="0"/>
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
-=======
+
           <Group type="102" alignment="1" attributes="0">
               <Component id="jScrollPane1" min="-2" pref="272" max="-2" attributes="0"/>
               <EmptySpace pref="36" max="32767" attributes="0"/>
@@ -89,15 +84,13 @@
                   <Component id="AddButton" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
->>>>>>> parent of 611701a (half done)
+
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
     <Component class="javax.swing.JButton" name="AddButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="jButton1"/>
@@ -106,21 +99,21 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddButtonActionPerformed"/>
       </Events>
     </Component>
->>>>>>> parent of 611701a (half done)
+
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
         <Property name="text" type="java.lang.String" value="View"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
-=======
+
     <Component class="javax.swing.JButton" name="AddButton">
       <Properties>
         <Property name="text" type="java.lang.String" value="Add"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AddButtonActionPerformed"/>
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
+
       </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
