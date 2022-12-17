@@ -61,10 +61,10 @@ private ViewProductsScreen viewProductsScreen;
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop", "myuser", "xxxx");
             
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306", "myuser", "xxxx");
->>>>>>> parent of 611701a (half done)
+
             Statement stmt=conn.createStatement();){
                 
-<<<<<<< HEAD
+
                 while(rs.next()){
                     String id=String.valueOf(rs.getInt("id"));
                     String name=String.valueOf(rs.getString("name"));
@@ -78,7 +78,7 @@ private ViewProductsScreen viewProductsScreen;
                 }
                  
             }        catch(SQLException ex){
-=======
+
             
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:/bookshop", "myuser", "0000");
             Statement stmt=conn.createStatement();){
@@ -96,13 +96,12 @@ private ViewProductsScreen viewProductsScreen;
             
             
         catch(SQLException ex){
->>>>>>> 76de764827ef1b59eecb03515d0f1cc8cf3bef3e
-=======
+
             System.out.println("Connected sucessfully ");}
             
             
         catch(SQLException ex){
->>>>>>> parent of 611701a (half done)
+
            ex.printStackTrace();
                      }
     }
