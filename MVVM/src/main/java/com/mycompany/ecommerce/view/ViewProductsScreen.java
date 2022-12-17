@@ -6,6 +6,7 @@ package com.mycompany.ecommerce.view;
 
 import com.mycompany.ecommerce.ObserverPattern.Observer;
 import com.mycompany.ecommerce.viewmodel.ViewProductViewModel;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -13,11 +14,21 @@ import com.mycompany.ecommerce.viewmodel.ViewProductViewModel;
  */
 public class ViewProductsScreen extends javax.swing.JFrame implements Observer{
 private AddProductScreen addProductScreen;
+private ViewProductViewModel viewProductViewModel;
+private String[] columnNames={"id","name","price"};
     /**
      * Creates new form ViewProductsScreen
      */
+public void setdata(){
+   jTable1.setModel(new DefaultTableModel (viewProductViewModel.toArray(),columnNames));
+
+
+}
     public ViewProductsScreen() {
         initComponents();
+         viewProductViewModel =new ViewProductViewModel(this);
+        viewProductViewModel.viewTableDB();
+        
     }
 
     /**
@@ -30,36 +41,28 @@ private AddProductScreen addProductScreen;
     private void initComponents() {
 
         AddButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("View products");
 
-        AddButton.setText("jButton1");
+        AddButton.setText("Add");
         AddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddButtonActionPerformed(evt);
             }
         });
 
-        jButton1.setText("View");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "ID", "name", "Price"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -69,26 +72,22 @@ private AddProductScreen addProductScreen;
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(326, Short.MAX_VALUE))
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(AddButton)
-                        .addGap(78, 78, 78))))
+                        .addGap(134, 134, 134)
+                        .addComponent(AddButton)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(AddButton))
-                .addGap(23, 23, 23))
+                .addGap(28, 28, 28)
+                .addComponent(AddButton)
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
         pack();
@@ -102,12 +101,6 @@ private AddProductScreen addProductScreen;
         addProductScreen.attach(this);
         addProductScreen.setVisualState(true);
     }//GEN-LAST:event_AddButtonActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        ViewProductViewModel viewProductViewModel =new ViewProductViewModel();
-        viewProductViewModel.viewTableDB();
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,7 +145,6 @@ private AddProductScreen addProductScreen;
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddButton;
-    private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
