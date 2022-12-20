@@ -65,7 +65,7 @@ public ViewProductsScreen(String[] columnsNames) {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("View products");
 
-        jButton1.setText("Add to cart");
+        jButton1.setText("Add to Database");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -84,17 +84,6 @@ public ViewProductsScreen(String[] columnsNames) {
             }
         ));
         jScrollPane1.setViewportView(jTable1);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\omare\\OneDrive\\Desktop\\shop.png")); // NOI18N
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\omare\\OneDrive\\Desktop\\book 2.jpg")); // NOI18N
-        jLabel2.setText("jLabel2");
-
-        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\omare\\OneDrive\\Desktop\\bookA.1.jpg")); // NOI18N
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\omare\\OneDrive\\Desktop\\BookB.1.jpg")); // NOI18N
-
-        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\omare\\OneDrive\\Desktop\\BookC.1.jpg")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -124,7 +113,7 @@ public ViewProductsScreen(String[] columnsNames) {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(8, Short.MAX_VALUE)
+                .addContainerGap(24, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel3)

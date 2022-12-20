@@ -188,17 +188,18 @@ private Boolean state;
          if((chooseItem.getSelectedIndex())==1){
             ImageIcon image=new ImageIcon("bookA.jpg");
             imageLabel.setIcon(image);
+            jTextField2.setText("Dance of the dragons");
             
         }
         if((chooseItem.getSelectedIndex()==2)){
            ImageIcon image=new ImageIcon("BookB.jpg");
             imageLabel.setIcon(image);
-            
+            jTextField2.setText("Harry potter");
         }
          if((chooseItem.getSelectedIndex()==3)){
            ImageIcon image=new ImageIcon("BookC.jpg");
             imageLabel.setIcon(image);
-            
+            jTextField2.setText("Lord of the rings");
         }
         
        
