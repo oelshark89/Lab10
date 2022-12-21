@@ -58,7 +58,7 @@ private ViewProductsScreen viewProductsScreen;
                     String id=String.valueOf(rs.getInt("id"));
                     String name=String.valueOf(rs.getString("name"));
                     String price =String.valueOf(rs.getDouble("price"));
-                    System.out.println(id);
+                    
                             
                           
                     ProductItem productItem=new ProductItem(Integer.parseInt(id), name,Double.parseDouble(price));
@@ -68,11 +68,11 @@ private ViewProductsScreen viewProductsScreen;
                  
             }        catch(SQLException ex){
            ex.printStackTrace();
-                    
+            }
                     
         
     }
-    }
+    
         public void toTable(){
       String [][] data=new String[products.size()][3];
                  for(int i=0;i<products.size();i++){

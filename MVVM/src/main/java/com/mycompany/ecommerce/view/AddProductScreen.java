@@ -20,7 +20,7 @@ public class AddProductScreen extends javax.swing.JFrame implements Subject {
 private AddProductViewModel addProductViewModel;
 private ArrayList<ViewProductsScreen> observers= new ArrayList();
 private ViewProductViewModel viewProductViewModel;
-private Boolean state;
+private boolean state;
     public AddProductScreen(ViewProductViewModel viewProductViewModel) {
         initComponents();
         this.viewProductViewModel=viewProductViewModel;
