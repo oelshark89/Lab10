@@ -48,7 +48,7 @@ private ViewProductsScreen viewProductsScreen;
             try (
               
                    
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop", "myuser", "xxxx");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop", "myuser", "0000");
             Statement stmt=conn.createStatement();){
                 String sql = "select * from books";
                 ResultSet rs=stmt.executeQuery(sql);

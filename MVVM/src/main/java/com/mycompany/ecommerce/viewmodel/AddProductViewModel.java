@@ -22,7 +22,7 @@ public class AddProductViewModel {
     }
     public void addProduct(){
          try (   
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop", "myuser", "xxxx");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/bookshop", "myuser", "0000");
             Statement stmt=conn.createStatement();){
             ProductItem product  =new ProductItem(Integer.parseInt(id), name, Double.parseDouble(price));
              String sql="insert into books values ( "+Integer.parseInt(this.id)+" , '"+this.name+"' , "+Double.parseDouble(this.price)+" )";
